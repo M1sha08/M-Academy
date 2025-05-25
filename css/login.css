@@ -1,5 +1,9 @@
 @import url(style.css);
 
+body {
+  background-color: hsl(0, 0%, 17%);
+}
+
 .login {
   box-sizing: border-box;
   padding: 100px 10px;
