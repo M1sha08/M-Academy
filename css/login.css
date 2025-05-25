@@ -1,0 +1,86 @@
+@import url(style.css);
+
+.login {
+  box-sizing: border-box;
+  padding: 100px 10px;
+}
+
+.login .container-sm {
+  padding: 20px 40px 40px 40px;
+  border-radius: 20px;
+  position: relative;
+}
+
+/* Go-Back Button */
+.login .container-sm .go-back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  margin: 0;
+  z-index: 2;
+}
+
+.login .container-sm .login-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login .container-sm .login-content .login-heading p {
+  border-bottom: 1px solid var(--light-color);
+  margin-bottom: 30px;
+}
+
+.login .container-sm .login-content .login-body form{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 70vw;
+  max-width: 350px;
+}
+
+.login .container-sm .login-content .login-body form input,
+.login .container-sm .login-content .login-body form button {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  box-sizing: border-box;
+}
+
+#email, #password {
+  padding: 13px 20px;
+  background: var(--grey-color);
+  color: var(--light-color);
+  border: none;
+  border-radius: 20px;
+}
+
+.login .container-sm .login-content .login-body form button {
+  margin-top: 10px;
+  font-size: 1.3rem;
+}
+
+@media (max-width:670px) {
+  .text-big-m {
+    font-size: 4rem;
+  }
+
+  .text-xxl {
+    font-size: 3rem;
+  }
+
+  .login .container-sm .go-back-button {
+    display: block;
+    width: 90%;
+    box-sizing: border-box;
+    font-size: 18px;
+    
+  }
+
+  .login .container-sm .login-content {
+    padding-top: 60px;
+  }
+}

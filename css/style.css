@@ -1,0 +1,180 @@
+@import url(m-academy.css);
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Variables */
+:root {
+  --grey-color: hsl(0, 0%, 28%);
+  --light-color: hsl(0, 0%, 91%);
+  --dark-grey-color: hsl(0, 0%, 17%);
+}
+
+body {
+  font-family: 'Zain';
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+hr {
+  color: var(--light-color);
+  width: 95%;
+  margin: 20px auto;
+}
+
+/* ---- Utility Classes ---- */
+
+/* Containers */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.container-sm {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Card */
+.card {
+  padding: 20px;
+  border-radius: 15px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 13px 20px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+  white-space: nowrap;
+}
+
+.btn-light {
+  background: var(--light-color);
+  color: var(--grey-color);
+}
+
+.btn-grey {
+  background: var(--grey-color);
+  color: var(--light-color);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn:hover {
+  opacity: 0.7;
+  transform: scale(1.07);
+}
+
+/* Background Classes */
+
+.bg-light {
+  background: var(--light-color);
+}
+
+.bg-grey {
+  background: var(--grey-color);
+}
+
+.bg-dark-grey {
+  background: var(--dark-grey-color);
+}
+
+.bg-transperent-light {
+  background: hsla(0, 0%, 91%, 0.5);;
+}
+
+.bg-transperent-grey {
+  background: hsla(0, 0%, 25%, 0.5);;
+}
+
+/* Text Classes */
+.text-big-m {
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+
+.text-xxl {
+  font-size: 4rem;
+  line-height: 1.2;
+  font-weight: 600;
+  margin:0;
+}
+
+.text-xl {
+  font-size: 2.2rem;
+  line-height:1.4;
+  font-weight: normal;
+  margin:0;
+}
+
+.text-lg {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin:0;
+}
+
+.text-nm {
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin:0;
+}
+
+.text-sm {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin:0;
+}
+
+.text-light {
+  color: var(--light-color);
+}
+
+.text-grey {
+  color: var(--grey-color);
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
